@@ -8,8 +8,7 @@ var mutableDouble : Double = 2.1
 
 // Use ‘let’ for a constants
 let constantDouble : Double = 3.14
-
-//: ### Optional variables
+//: ### Optional variables ###
 var optionalInteger : Int?
 optionalInteger = nil
 
@@ -43,7 +42,6 @@ var implicitlyUnwrappedInt: Int!
 // However, if implicitlyUnwrappedInt is not nil, it wont.
 implicitlyUnwrappedInt = 0
 let result = implicitlyUnwrappedInt + 1
-
 //: ## Strings
 let hello: String = "Hello"
 let world: String = "World!"
@@ -54,13 +52,11 @@ var tipString: String = "2499"
 // Parsing Strings to a different type always becomes an Optional variable, as it might fail.
 var tipInt: Int? = Int(tipString)
 var tipDouble: Double? = Double(tipString)
-
 //: ## Arrays
 var anArrayOfStrings: [String] = ["This", "is", "an", "array", "of"]
 var anotherString = "strings"
 anArrayOfStrings.append(anotherString)
 // anArrayOfStrings now contains ["This", "is", "an", "array", "of", "strings"]
-
 //: ## Dictionary
 var personsAge: [String : Int] = ["Rick Sanchez" : 50, "Morty Smith" : 14]
 personsAge["Jerry Smith"] = 34
@@ -69,8 +65,16 @@ personsAge["Morty Smith"] = nil
 for (key, value) in personsAge {
     print("\(key) is \(value) years old.")
 }
-
 //: ## Flow control
+// If else statements
+if 1 == 2 {
+
+} else if 2 == 3 {
+
+} else {
+
+}
+
 // Switch statement
 var value = 5
 switch value {
@@ -82,7 +86,7 @@ default:
     print("I can't count!")
 }
 
-// Loops
+//: ### Loops
 // Loop from 0 to 3, inclusive of 3.
 // 0, 1, 2, 3
 for i in 0...3 {
@@ -103,18 +107,20 @@ for fruit in fruitsArray {
     print(fruit, terminator: " ")
 }
 print()
-
 //: ## Methods
 // A method with no parameter and no return value
 func doSomething() {
     print("Something")
 }
+// Using the method
+doSomething()
 
 // A method with a parameter of Int and return type of Int
 func addOne(number: Int) -> Int {
     return number + 1
 }
-
+// Using the method
+addOne(number: 1)
 //: ## Classes and Protocols
 class Human {
     var property: String
@@ -127,7 +133,7 @@ class Human {
 }
 
 // Defining a protocol.
-// (similar to an Interface in Java)
+// (Similar to an Interface in Java)
 protocol CanWalk {
     func walk()
 }
@@ -145,10 +151,9 @@ class Boy: Human, CanWalk {
         print("I am walking")
     }
 }
-
 //: ## Initializing a class
-let kaiWern: Boy = Boy(property: "small eyes")
-kaiWern.walk()
+let jingHong: Boy = Boy(property: "short")
+jingHong.walk()
 
 //: ## Enums
 enum Gender: String {
@@ -156,14 +161,7 @@ enum Gender: String {
     case Female = "female"
 }
 let myGender: Gender = .Male
-print(myGender.rawValue)
-
 //: ## Other things
-// You don't have to declare variable type everytime.
-var name = "Jing Hong"
-// The type will be inferred from the value given,
-// and once its set, you can not change it to a different type
-//name = 89 will not work
 /*
  Apple developer documentation
  https://developer.apple.com/documentation/

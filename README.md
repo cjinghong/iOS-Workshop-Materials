@@ -8,11 +8,11 @@ Included in this repository is all the teaching materials that is needed for you
 ..* Connect UI Elements (Labels, Buttons, Views, etc.) to code
 ..* Understand Model View Controller
 ..* Save your data models into a .json file
-\n
-*The purpose of this 2 hour workshop is not to turn you into an iOS engineer, 
+
+* The purpose of this 2 hour workshop is not to turn you into an iOS engineer, 
 but to expose you to the process of writing an iOS app and provide you with all the 
-necessary information to get you strated*
-\n
+necessary information to get you strated *
+
 Extra reference links that might be useful for you:
 * [Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html)
 * [Apple developer documentation](https://developer.apple.com/documentation/)

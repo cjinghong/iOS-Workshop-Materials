@@ -14,4 +14,6 @@ Included in this repository is all the teaching materials that is needed for you
 ## Extra reference links that might be useful for you:
 * [Swift Documentation](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html)
 * [Apple developer documentation](https://developer.apple.com/documentation/)
-* A more powerful form of persistent storage that you can use instead of storing a JSON file: [Core Data Programming guide](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075-CH2-SW1)
+* [Core Data Programming guide](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075-CH2-SW1) A more powerful form of persistent storage that you can use
+
+* [iOS Tutorial from Apple Developer](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/index.html#//apple_ref/doc/uid/TP40015214-CH2-SW1)

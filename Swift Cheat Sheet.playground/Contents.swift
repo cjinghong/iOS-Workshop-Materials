@@ -154,7 +154,15 @@ class Boy: Human, CanWalk {
 //: ## Initializing a class
 let jingHong: Boy = Boy(property: "short")
 jingHong.walk()
-
+//: ## Singleton
+class MySingleton {
+    // Static variable
+    static let sharedInstance = MySingleton()
+    // Private init, so nobody else can initialize another instance of MySingleton
+    private init(){}
+}
+// Using it
+MySingleton.sharedInstance
 //: ## Enums
 enum Gender: String {
     case Male = "male"

@@ -3,11 +3,15 @@
 // How to declare a variable
 // var yourVariableName : VariableType = value
 
-var mutableInteger : Int = 420
+var mutableInteger : Int = 12
 var mutableDouble : Double = 2.1
+
+var myName : String = "Jing Hong"
+print(myName)
 
 // Use ‘let’ for a constants
 let constantDouble : Double = 3.14
+let firstName : String = "Chan"
 //: ### Optional variables ###
 var optionalInteger : Int?
 optionalInteger = nil
@@ -26,22 +30,8 @@ if let someInteger = optionalInteger {
 // Example 2:
 // Some integer will be optionalInteger if it is not nil,
 // and if optionalInteger is nil, it will be set to 0
-let someInteger = optionalInteger ?? 0
-
-
-// Implicitly unwrapped optionals
-
-// This means that the variable is currently nil,
-// This is like ignoring the fact that the variable is nil,
-// and treat it as if it has a value instead
-var implicitlyUnwrappedInt: Int!
-
-// Doing the below will cause your app to crash:
-//let result = implicitlyUnwrappedInt + 1
-
-// However, if implicitlyUnwrappedInt is not nil, it wont.
-implicitlyUnwrappedInt = 0
-let result = implicitlyUnwrappedInt + 1
+let someInteger: Int = optionalInteger ?? 0
+print(optionalInteger ?? "Theres nothing here")
 //: ## Strings
 let hello: String = "Hello"
 let world: String = "World!"
@@ -59,8 +49,10 @@ anArrayOfStrings.append(anotherString)
 // anArrayOfStrings now contains ["This", "is", "an", "array", "of", "strings"]
 //: ## Dictionary
 var personsAge: [String : Int] = ["Rick Sanchez" : 50, "Morty Smith" : 14]
-personsAge["Jerry Smith"] = 34
+
+print("Morty is \(personsAge["Morty Smith"])")
 personsAge["Morty Smith"] = nil
+personsAge["Jerry Smith"] = 34
 
 for (key, value) in personsAge {
     print("\(key) is \(value) years old.")

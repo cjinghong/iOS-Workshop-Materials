@@ -33,9 +33,10 @@ if let someInteger = optionalInteger {
 let someInteger: Int = optionalInteger ?? 0
 print(optionalInteger ?? "Theres nothing here")
 //: ## Strings
-let hello: String = "Hello"
-let world: String = "World!"
-let combinedString: String = "\(hello) \(world) Goodbye!"
+let hello: String = "HELLO"
+let world: String = "WORLD"
+let combinedString: String =
+    "\(hello) \(world) goodbye!"
 
 // Parsing Strings
 var tipString: String = "2499"
@@ -45,6 +46,8 @@ var tipDouble: Double? = Double(tipString)
 //: ## Arrays
 var anArrayOfStrings: [String] = ["This", "is", "an", "array", "of"]
 var anotherString = "strings"
+anotherString = "1.2515"
+
 anArrayOfStrings.append(anotherString)
 // anArrayOfStrings now contains ["This", "is", "an", "array", "of", "strings"]
 //: ## Dictionary
